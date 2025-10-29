@@ -1,0 +1,301 @@
+/* ----------------- RESET ----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ----------------- CABEÇALHO ----------------- */
+.site-header {
+  background-color: #ffeef4;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.site-header .logo h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #ff6f91;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #ff6f91;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-nav ul li a:hover {
+  background-color: #ff6f91;
+  color: #fff;
+}
+
+/* ----------------- CONTAINERS ----------------- */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------- HOME ----------------- */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-imagem img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.home-texto {
+  flex: 1;
+}
+
+.home-texto h2 {
+  font-size: 2rem;
+  color: #ff6f91;
+  margin-bottom: 15px;
+}
+
+.home-texto p {
+  margin-bottom: 15px;
+}
+
+/* ----------------- DICAS E CUIDADOS ----------------- */
+.dicas-container,
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.dicas-imagem img,
+.produtos-imagem img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.dicas-texto,
+.produtos-lista {
+  flex: 1;
+}
+
+.dicas-texto h2,
+.produtos-lista h2 {
+  font-size: 1.8rem;
+  color: #ff6f91;
+  margin-bottom: 15px;
+}
+
+.dicas-texto ol,
+.produtos-lista ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.dicas-texto li,
+.produtos-lista li {
+  margin-bottom: 10px;
+}
+
+/* ----------------- PRODUTOS FAVORITOS ----------------- */
+.produtos-lista ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ----------------- CORTES IDEIAS ----------------- */
+.cortes-container h2 {
+  font-size: 2rem;
+  color: #ff6f91;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-cortes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.corte-item {
+  flex: 1 1 30%;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.corte-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.corte-item .legenda {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.corte-item:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------- SUBCORTES ----------------- */
+.subcortes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.subcorte {
+  display: flex;
+  flex: 1 1 45%;
+  gap: 15px;
+  background-color: #fff0f5;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.subcorte img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.subcorte-texto h3 {
+  margin-bottom: 10px;
+  color: #ff6f91;
+}
+
+.subcorte-texto ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subcorte-texto li {
+  margin-bottom: 5px;
+}
+
+/* ----------------- CONTATO ----------------- */
+.contato-container {
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #ff6f91;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contato-container a {
+  color: #ff6f91;
+  text-decoration: none;
+}
+
+.contato-container a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------- ESPAÇO DAS LEITORAS ----------------- */
+.leitoras-container {
+  text-align: center;
+}
+
+.leitoras-container h2 {
+  color: #ff6f91;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.leitoras-container textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.leitoras-container button {
+  padding: 10px 20px;
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.leitoras-container button:hover {
+  background-color: #ff4c70;
+}
+
+/* ----------------- RESPONSIVO ----------------- */
+@media screen and (max-width: 900px) {
+  .home-container,
+  .dicas-container,
+  .produtos-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subcortes {
+    flex-direction: column;
+  }
+
+  .subcorte {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subcorte img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .grid-cortes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .corte-item {
+    flex: 1 1 100%;
+  }
+}
