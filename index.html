@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ondas Livres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ----------------- CABEÇALHO ----------------- -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>🌊 Ondas Livres</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('dicas')">Dicas</a></li>
+        <li><a href="#" onclick="showPage('produtos')">Produtos</a></li>
+        <li><a href="#" onclick="showPage('cortes')">Cortes</a></li>
+        <li><a href="#" onclick="showPage('contato')">Contato</a></li>
+        <li><a href="#" onclick="showPage('leitoras')">Leitoras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ----------------- CONTEÚDO ----------------- -->
+  <main id="app">
+    <!-- Conteúdo carregado via JS -->
+  </main>
+
+  <!-- ----------------- RODAPÉ ----------------- -->
+  <footer style="text-align:center; padding:20px; background-color:#ffeef4; margin-top:40px;">
+    <p>&copy; 2025 Ondas Livres. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ----------------- JS TEMPLATES ----------------- -->
+  <script src="js/templates.js"></script>
+
+  <!-- ----------------- SPA ----------------- -->
+  <script>
+    // ----------------- FUNÇÃO PARA TROCAR PÁGINAS -----------------
+    function showPage(page) {
+      const app = document.getElementById('app');
+      switch(page) {
+        case 'home':
+          app.innerHTML = homeTemplate();
+          break;
+        case 'dicas':
+          app.innerHTML = dicasTemplate();
+          break;
+        case 'produtos':
+          app.innerHTML = produtosTemplate();
+          break;
+        case 'cortes':
+          app.innerHTML = cortesTemplate();
+          break;
+        case 'contato':
+          app.innerHTML = contatoTemplate();
+          break;
+        case 'leitoras':
+          app.innerHTML = leitorasTemplate();
+          break;
+      }
+      window.scrollTo(0,0);
+    }
+
+    // ----------------- INICIALIZAÇÃO -----------------
+    document.addEventListener('DOMContentLoaded', () => {
+      showPage('home');
+    });
+  </script>
+</body>
+</html>
